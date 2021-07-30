@@ -1,5 +1,5 @@
 name: AsgardCommand
-description: 阿萨神谕 (深度条件命令替换插件)
+description: 神谕 (深度条件命令替换插件)
 main: me.asgard.asgardcommand.AsgardCommand
 version: ${project.version}
 

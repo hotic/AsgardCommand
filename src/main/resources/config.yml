@@ -1,48 +1,48 @@
 commands:
-  #节点
+  # 节点
   reload:
-    #所需权限
+    # 所需权限
     use_per:
       per: "asgardcommand.reload"
       message: "你没有使用该命令的权限"
-    #所需金币
+    # 所需金币
     use_money:
-      #是否消耗
+      # 是否消耗
       consume: true
-      #消耗的值
+      # 消耗的值
       value: 100
       message: "您的金币不足"
-    #所需物品 (Sacreditem)
+    # 所需物品 (Sacreditem)
     use_item:
       consume: true
-      #消耗的物品
+      # 消耗的物品
       item:
         - "玄铁:5"
       message: "您的物品不足{items}"
-    #所需等级 (不消耗)
+    # 所需等级 (不消耗)
     use_level:
       consume: true
       value: 1000
       message: "您的等级不足"
-    #冷却时间 (Data记录)
+    # 冷却时间 (Data记录)
     cooldown: 0
-    #执行成功几率
+    # 执行成功几率
     chance: 50
-    #替换命令
+    # 替换命令
     source_command: "acreload"
-    #是否支持参数
+    # 是否支持参数
     no_arg: true
-    #是否提示
+    # 是否提示
     no_messages:
       - "cooldown"
-    #条件失败前置
+    # 条件失败前置
     decommandp:
       - ""
-    #条件失败时执行命令
+    # 条件失败时执行命令
     decommands:
       - ""
-    #条件成功时执行命令
+    # 条件成功时执行命令
     commands:
-      #延迟执行
+      # 延迟执行
       - "delay: 100"
       - "{server}:cca {player} /plugman reload Asgardcommand"
